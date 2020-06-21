@@ -110,8 +110,10 @@
         app:layout_constraintVertical_bias="0.248" />
 
     <RadioGroup
-        android:layout_width="88dp"
-        android:layout_height="64dp"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.189"
@@ -135,21 +137,16 @@
     </RadioGroup>
 
     <RadioGroup
-        android:layout_width="90dp"
-        android:layout_height="62dp"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="485dp"
+        android:layout_marginEnd="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/links"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="checklinksrechts"
-            android:text="links" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136">
 
         <RadioButton
             android:id="@+id/rechts"
@@ -157,7 +154,17 @@
             android:layout_height="wrap_content"
             android:onClick="checklinksrechts"
             android:text="rechts" />
+
+        <RadioButton
+            android:id="@+id/links"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checklinksrechts"
+            android:text="links" />
     </RadioGroup>
+
+
+
 
     <Button
         android:id="@+id/back"
@@ -188,8 +195,8 @@
         android:id="@+id/keinA"
         android:layout_width="136dp"
         android:layout_height="39dp"
-        android:text="10 = kein normaler Alltag mehr möglich "
-        android:textColor="#F44336"
+        android:text="6 = kein normaler Alltag mehr möglich "
+        android:textColor="#6E0909"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -197,30 +204,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.715" />
 
+
     <Button
         android:id="@+id/uarmml"
         android:layout_width="23dp"
         android:layout_height="37dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.427" />
 
     <Button
         android:id="@+id/handr"
         android:layout_width="22dp"
         android:layout_height="24dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="45dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <Button
@@ -228,272 +237,276 @@
         android:layout_width="22dp"
         android:layout_height="28dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.529" />
 
     <Button
         android:id="@+id/fussknol"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.94" />
+
 
     <Button
         android:id="@+id/fussr"
         android:layout_width="49dp"
         android:layout_height="23dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.667"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.989" />
 
     <Button
         android:id="@+id/fussl"
         android:layout_width="45dp"
         android:layout_height="24dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.991" />
 
     <Button
         android:id="@+id/ubeinmr"
         android:layout_width="26dp"
         android:layout_height="45dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.85" />
+
 
     <Button
         android:id="@+id/ubeinl"
         android:layout_width="28dp"
         android:layout_height="48dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.856" />
 
     <Button
         android:id="@+id/kniekel"
         android:layout_width="20dp"
         android:layout_height="24dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.728" />
 
     <Button
         android:id="@+id/obescher"
         android:layout_width="33dp"
         android:layout_height="47dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.608" />
 
     <Button
         android:id="@+id/obeschel"
         android:layout_width="31dp"
         android:layout_height="48dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/kopfhi"
+        app:layout_constraintVertical_bias="0.609" />
+
 
     <Button
         android:id="@+id/beckenl"
         android:layout_width="36dp"
         android:layout_height="48dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.489" />
 
     <Button
         android:id="@+id/untruer"
         android:layout_width="25dp"
         android:layout_height="46dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.759"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.363" />
 
     <Button
         android:id="@+id/untruel"
         android:layout_width="25dp"
         android:layout_height="48dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.364" />
+
 
     <Button
         android:id="@+id/uarmmr"
         android:layout_width="22dp"
         android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="149dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
         android:id="@+id/beckenr"
         android:layout_width="36dp"
         android:layout_height="48dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.489" />
 
     <Button
         android:id="@+id/fussknor"
-        android:layout_width="22dp"
-        android:layout_height="23dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.938" />
 
     <Button
         android:id="@+id/knieker"
         android:layout_width="20dp"
         android:layout_height="24dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
-
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.728" />
 
     <Button
         android:id="@+id/obruer"
         android:layout_width="34dp"
         android:layout_height="42dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.774"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.22" />
 
     <Button
         android:id="@+id/obruel"
         android:layout_width="34dp"
         android:layout_height="41dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="342dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.671"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/oarmol"
         android:layout_width="22dp"
         android:layout_height="40dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.315" />
 
     <Button
         android:id="@+id/oarmor"
         android:layout_width="22dp"
         android:layout_height="40dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="138dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.591"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.035" />
 
     <Button
         android:id="@+id/nacken"
         android:layout_width="38dp"
         android:layout_height="31dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/kopfhi"
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
         android:id="@+id/kopfhi"
         android:layout_width="56dp"
         android:layout_height="42dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.738"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintBottom_toBottomOf="@+id/mensch"
+        app:layout_constraintEnd_toEndOf="@+id/mensch"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/mensch"
+        app:layout_constraintTop_toTopOf="@+id/mensch"
+        app:layout_constraintVertical_bias="0.006" />
 
     <Button
         android:id="@+id/weiter"
