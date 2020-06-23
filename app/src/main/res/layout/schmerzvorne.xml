@@ -140,12 +140,12 @@
             android:layout_width="23dp"
             android:layout_height="16dp"
             android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
-            app:layout_constraintHorizontal_bias="0.364"
+            app:layout_constraintHorizontal_bias="0.389"
             app:layout_constraintStart_toStartOf="@+id/mensch"
             app:layout_constraintTop_toTopOf="@+id/mensch"
-            app:layout_constraintVertical_bias="0.842" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/fussl"

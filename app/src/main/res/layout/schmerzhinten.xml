@@ -259,27 +259,27 @@
 
     <Button
         android:id="@+id/fussr"
-        android:layout_width="49dp"
-        android:layout_height="23dp"
+        android:layout_width="29dp"
+        android:layout_height="20dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/mensch"
         app:layout_constraintEnd_toEndOf="@+id/mensch"
-        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="@+id/mensch"
         app:layout_constraintTop_toTopOf="@+id/mensch"
-        app:layout_constraintVertical_bias="0.989" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/fussl"
-        android:layout_width="45dp"
-        android:layout_height="24dp"
+        android:layout_width="28dp"
+        android:layout_height="22dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/mensch"
         app:layout_constraintEnd_toEndOf="@+id/mensch"
-        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="@+id/mensch"
         app:layout_constraintTop_toTopOf="@+id/mensch"
-        app:layout_constraintVertical_bias="0.991" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/ubeinmr"
