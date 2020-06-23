@@ -14,12 +14,10 @@
         android:layout_marginTop="96dp"
         android:layout_marginEnd="107dp"
         android:text="Passwort eingeben und wiederholen"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/passwort"
         android:layout_width="wrap_content"
@@ -31,12 +29,10 @@
         android:ems="10"
         android:hint="Passwort eingeben*"
         android:inputType="textPassword"
-
         app:layout_constraintBottom_toTopOf="@+id/pwwiederholen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pweingeben" />
-
     <EditText
         android:id="@+id/pwwiederholen"
         android:layout_width="wrap_content"
@@ -53,7 +49,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwort" />
-
     <TextView
         android:id="@+id/zweifaktor"
         android:layout_width="wrap_content"
@@ -68,7 +63,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwwiederholen" />
-
     <RatingBar
         android:id="@+id/sternpw"
         android:layout_width="wrap_content"
@@ -80,7 +74,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zweifaktor" />
-
     <Button
         android:id="@+id/registrieren"
         android:layout_width="wrap_content"
@@ -97,7 +90,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sternpw"
         app:layout_constraintVertical_bias="1.0" />
-
     <Button
         android:id="@+id/zurück"
         android:layout_width="wrap_content"
@@ -114,7 +106,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sternpw"
         app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/benutzername"
         android:layout_width="148dp"

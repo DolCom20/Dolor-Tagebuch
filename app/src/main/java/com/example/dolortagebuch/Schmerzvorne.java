@@ -127,8 +127,8 @@ public class Schmerzvorne extends AppCompatActivity {
 
     public void zurück(View view) {
         //Wohin wird man mit dem zurück Button geleitet?
-        //Intent i = new Intent(getApplicationContext(), _____.class);
-        //startActivity(i);
+        Intent i = new Intent(getApplicationContext(), Einloggen.class);
+        startActivity(i);
     }
 
     public void weiter(View view){

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:maxWidth="1080dp"
-    android:maxHeight="1720dp"
-    android:onClick="schmerzstärke">
+    android:maxHeight="1720dp">
 
 
         <RadioGroup
@@ -102,6 +101,7 @@
             android:id="@+id/handr"
             android:layout_width="22dp"
             android:layout_height="24dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -114,6 +114,7 @@
             android:id="@+id/handl"
             android:layout_width="22dp"
             android:layout_height="28dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -126,6 +127,7 @@
             android:id="@+id/fussknol"
             android:layout_width="24dp"
             android:layout_height="17dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -139,6 +141,7 @@
             android:id="@+id/fussr"
             android:layout_width="23dp"
             android:layout_height="16dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -151,6 +154,7 @@
             android:id="@+id/fussl"
             android:layout_width="23dp"
             android:layout_height="16dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -163,6 +167,7 @@
             android:id="@+id/ubeinor"
             android:layout_width="26dp"
             android:layout_height="58dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -175,6 +180,7 @@
             android:id="@+id/ubeinol"
             android:layout_width="24dp"
             android:layout_height="56dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -187,6 +193,7 @@
             android:id="@+id/knier"
             android:layout_width="20dp"
             android:layout_height="24dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -199,6 +206,7 @@
             android:id="@+id/obeschel"
             android:layout_width="34dp"
             android:layout_height="55dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -238,7 +246,7 @@
             android:id="@+id/obescher"
             android:layout_width="29dp"
             android:layout_height="54dp"
-            android:onClick="test"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -251,6 +259,7 @@
             android:id="@+id/beckenr"
             android:layout_width="36dp"
             android:layout_height="48dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -276,6 +285,7 @@
             android:id="@+id/beckenl"
             android:layout_width="36dp"
             android:layout_height="48dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -289,6 +299,7 @@
             android:id="@+id/fussknor"
             android:layout_width="25dp"
             android:layout_height="18dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -301,6 +312,7 @@
             android:id="@+id/kniel"
             android:layout_width="20dp"
             android:layout_height="24dp"
+            android:onClick="körperteilClick"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/mensch"
             app:layout_constraintEnd_toEndOf="@+id/mensch"
@@ -419,8 +431,6 @@
         </RadioGroup>
 
 
-
-
         <Button
             android:id="@+id/back"
             android:layout_width="88dp"
@@ -515,6 +525,7 @@
             android:id="@+id/weiter"
             android:layout_width="89dp"
             android:layout_height="51dp"
+            android:onClick="weiter"
             android:text="weiter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
