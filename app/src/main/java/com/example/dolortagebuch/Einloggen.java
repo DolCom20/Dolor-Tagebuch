@@ -17,8 +17,8 @@ public class Einloggen extends AppCompatActivity {
     String user2 = "Bernhard";
     String user3;
 
-    String pw1 = "1";//"Gw10#2012";
-    String pw2 = "2";//"DMEA_2019";
+    String pw1 = "Gw10#2019";
+    String pw2 = "DMEA!2019";
     String pw3;
 
     float stern1 = 1;

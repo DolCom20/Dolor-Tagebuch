@@ -43,10 +43,10 @@ public class Registrieren extends AppCompatActivity {
             if (vorname.length() == 0 || name.length() == 0 || email.length() == 0 || geburtsdatum.length() == 0) {
 
                 Toast.makeText(this, "Alle Felder mit * müssen ausgefüllt werden!", Toast.LENGTH_LONG).show();
-            } /*else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            }else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
                 Toast.makeText(this, "Bitte geben Sie eine gültige Email ein! ", Toast.LENGTH_LONG).show();
-            }*/ else {
+            }else {
                 Toast.makeText(this, "Es wurden folgenede Daten abgespeichert:" + "\n" + vorname + "\n" + name + "\n" + email + "\n" + geburtsdatum, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), Registrieren2.class);
                 i.putExtra("Vorname", vorname);
