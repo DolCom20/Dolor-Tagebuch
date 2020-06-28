@@ -160,7 +160,7 @@ public class Schmerzlinks extends AppCompatActivity {
 
     public void weiter(View view){
         //Wohin wird man mit dem weiter Button geleitet?
-        //Intent i = new Intent(getApplicationContext(), _____.class);
-        //startActivity(i);
+        Intent i = new Intent(getApplicationContext(), Schmerzliste.class);
+        startActivity(i);
     }
 }

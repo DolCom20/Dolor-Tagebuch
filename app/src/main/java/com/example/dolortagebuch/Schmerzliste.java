@@ -14,7 +14,7 @@ public class Schmerzliste extends AppCompatActivity {
         setContentView(R.layout.schmerzliste);
 
 
-        Intent daten = getIntent();
+        /*Intent daten = getIntent();
         Bundle koerperschmerz = daten.getExtras();
 
         if(koerperschmerz != null) {
@@ -26,7 +26,7 @@ public class Schmerzliste extends AppCompatActivity {
 
             TextView name = findViewById(R.id.test);
             name.setText("Körperteil: " + tester);
-        }
+        }*/
 
     }
 
