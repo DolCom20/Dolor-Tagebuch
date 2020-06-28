@@ -19,6 +19,7 @@ public class Schmerzvorne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.schmerzvorne);
 
+
     }
 
 
@@ -28,6 +29,7 @@ public class Schmerzvorne extends AppCompatActivity {
     int idalt;
     int idneu;
     int radioid;
+    Intent i;
 
     public void körperteilClick(View view)
     {
@@ -60,6 +62,19 @@ public class Schmerzvorne extends AppCompatActivity {
                 //Es wurde, nachdem ein Körperteil ausgewählt wurde ein Neues angeklickt.
                 //Altes Körperteil soll deaktiviert werden und das neue aktiviert
                 idalt = idneu;
+
+
+                //Button KT = findViewById(idalt);
+                RadioButton ST = findViewById(radioid);
+                //CharSequence koerperteil = KT.getText();
+                CharSequence schmerzstaerke = ST.getText();
+                String koerper = String.valueOf(idalt);
+                String schmerzen = schmerzstaerke.toString();
+                //i.putExtra("Koerperteil",koerperteil);
+                //i.putExtra("Schmerzstaerke",schmerzstaerke);
+                Toast.makeText(this, "Folgendes wurde in die Datenbank übertragen: " + "\n" + koerper + "\n" +schmerzen, Toast.LENGTH_LONG).show();
+
+
                 idneu = view.getId();
 
                 //Hier muss die radioid und idneu(vom Körperteil) abgespeichert werden
@@ -127,14 +142,14 @@ public class Schmerzvorne extends AppCompatActivity {
 
     public void zurück(View view) {
         //Wohin wird man mit dem zurück Button geleitet?
-        Intent i = new Intent(getApplicationContext(), Einloggen.class);
-        startActivity(i);
+        Intent j = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(j);
     }
 
     public void weiter(View view){
-        //Wohin wird man mit dem weiter Button geleitet?
-        //Intent i = new Intent(getApplicationContext(), _____.class);
-        //startActivity(i);
+        //Wohin wird man mit dem weiter Button geleitet
+        i = new Intent(getApplicationContext(), Schmerzliste.class);
+        startActivity(i);
     }
 
 

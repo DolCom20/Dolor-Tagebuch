@@ -64,6 +64,7 @@
         android:layout_marginBottom="84dp"
         android:focusable="auto"
         android:fontFamily="sans-serif-black"
+        android:text="Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/PasswortEingeben"
         app:layout_constraintEnd_toEndOf="parent"

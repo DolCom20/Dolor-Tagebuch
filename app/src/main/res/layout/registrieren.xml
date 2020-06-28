@@ -116,7 +116,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
-        android:onClick="onCheckboxClicked"
+        android:onClick="CheckBoxfrau"
         android:text="Frau"
         app:layout_constraintBottom_toTopOf="@+id/Vorname"
         app:layout_constraintEnd_toStartOf="@+id/Herr"
@@ -125,19 +125,19 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <CheckBox
-            android:id="@+id/Herr"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="15dp"
-            android:onClick="onCheckboxClicked"
-            android:text="Herr"
-            app:layout_constraintBottom_toTopOf="@+id/Vorname"
-            app:layout_constraintEnd_toStartOf="@+id/Avatar"
-            app:layout_constraintStart_toEndOf="@+id/Frau"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/Herr"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="CheckBoxclick"
+        android:text="Herr"
+        app:layout_constraintBottom_toTopOf="@+id/Vorname"
+        app:layout_constraintEnd_toStartOf="@+id/Avatar"
+        app:layout_constraintStart_toEndOf="@+id/Frau"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/registrieren"

@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="226dp"
-        android:layout_marginBottom="229dp"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/registrieren"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        tools:text="Name" />
 
     <Button
         android:id="@+id/registrieren"
@@ -61,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="139dp"
-        android:layout_marginTop="154dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="27dp"
         android:onClick="einloggen"
@@ -70,6 +55,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Willkommen"
         app:srcCompat="@drawable/avatarmann" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bitte Namen eingeben"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/registrieren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
 
 
 </android.support.constraint.ConstraintLayout>

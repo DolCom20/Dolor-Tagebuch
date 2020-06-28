@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -40,33 +41,20 @@ public class Registrieren extends AppCompatActivity {
             String geburtsdatum = Geburtsdatum.getText().toString();
 
             if (vorname.length() == 0 || name.length() == 0 || email.length() == 0 || geburtsdatum.length() == 0) {
-                Toast.makeText(this, "Alle Felder mit * müssen ausgefüllt werden!", Toast.LENGTH_LONG).show();
-            } else {
 
+                Toast.makeText(this, "Alle Felder mit * müssen ausgefüllt werden!", Toast.LENGTH_LONG).show();
+            } /*else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+
+                Toast.makeText(this, "Bitte geben Sie eine gültige Email ein! ", Toast.LENGTH_LONG).show();
+            }*/ else {
+                Toast.makeText(this, "Es wurden folgenede Daten abgespeichert:" + "\n" + vorname + "\n" + name + "\n" + email + "\n" + geburtsdatum, Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), Registrieren2.class);
+                i.putExtra("Vorname", vorname);
+                i.putExtra("Name", name);
                 startActivity(i);
             }
         }
 
-        public void onCheckboxClicked(View view) {
-
-            boolean checked = ((CheckBox) view).isChecked();
-            switch (view.getId()) {
-                case R.id.Herr:
-                    if (checked)
-
-                        break;
-                    switch (view.getId()) {
-                        case R.id.Frau:
-                            if (checked)
-
-
-                                break;
-                    }
-
-            }
-
-        }
 
 
         public void zurück(View view) {
@@ -100,5 +88,23 @@ public class Registrieren extends AppCompatActivity {
             }
 
         }
+
+    public void CheckBoxclick(View view) {
+        CheckBox Mann = (CheckBox) findViewById(R.id.Herr);
+        CheckBox Frau = (CheckBox) findViewById(R.id.Frau);
+        if (Mann.isChecked() == true) {
+            Frau.setChecked(false);
+
+        }
+    }
+
+    public void CheckBoxfrau(View view) {
+        CheckBox Mann = (CheckBox) findViewById(R.id.Herr);
+        CheckBox Frau = (CheckBox) findViewById(R.id.Frau);
+        if (Frau.isChecked() == true) {
+
+            Mann.setChecked(false);
+        }
+    }
 }
 

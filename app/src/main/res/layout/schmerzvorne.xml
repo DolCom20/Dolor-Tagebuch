@@ -435,6 +435,7 @@
             android:id="@+id/back"
             android:layout_width="88dp"
             android:layout_height="46dp"
+            android:onClick="zurück"
             android:text="zurück"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

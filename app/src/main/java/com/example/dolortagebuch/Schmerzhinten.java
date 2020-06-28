@@ -155,7 +155,7 @@ public class Schmerzhinten extends AppCompatActivity {
 
     public void zurück(View view) {
         //Wohin wird man mit dem zurück Button geleitet?
-        Intent i = new Intent(getApplicationContext(), Einloggen.class);
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
 
